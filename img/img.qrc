@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="img">
+    <file>Arquivos.png</file>
+    <file>Configuracoes.png</file>
+    <file>Despesas.png</file>
+    <file>Gestao de RH.png</file>
+    <file>Hotelaria.png</file>
+    <file>Itens.png</file>
+    <file>Login.png</file>
+    <file>Logo.png</file>
+    <file>Logout.png</file>
+    <file>marketing.png</file>
+    <file>painel estrategico.png</file>
+    <file>relatorio.png</file>
+    <file>restaurante.png</file>
+    <file>vendas.png</file>
+  </qresource>
+</RCC>
