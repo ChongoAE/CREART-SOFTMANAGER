@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1162</width>
+    <width>1268</width>
     <height>678</height>
    </rect>
   </property>
@@ -102,7 +102,7 @@ QScrollBar::handle:vertical:hover {
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -154,6 +154,16 @@ QScrollBar::handle:vertical:hover {
             <property name="text">
              <string>Arquivos</string>
             </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/Arquivos.png</normaloff>:/img/Arquivos.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
            </widget>
           </item>
           <item row="1" column="3">
@@ -163,6 +173,16 @@ QScrollBar::handle:vertical:hover {
             </property>
             <property name="text">
              <string>Painel Estratégico</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/painel estrategico.png</normaloff>:/img/painel estrategico.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -174,9 +194,19 @@ QScrollBar::handle:vertical:hover {
             <property name="text">
              <string>Marketing</string>
             </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/marketing.png</normaloff>:/img/marketing.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
            </widget>
           </item>
-          <item row="0" column="0">
+          <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignBottom">
            <widget class="QPushButton" name="vendas">
             <property name="toolTip">
              <string>Clique para entrar no painel de vendas</string>
@@ -204,6 +234,16 @@ QScrollBar::handle:vertical:hover {
             <property name="text">
              <string>Despesas</string>
             </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/Despesas.png</normaloff>:/img/Despesas.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
            </widget>
           </item>
           <item row="0" column="2">
@@ -213,6 +253,16 @@ QScrollBar::handle:vertical:hover {
             </property>
             <property name="text">
              <string>Hotelaria</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/Hotelaria.png</normaloff>:/img/Hotelaria.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -224,6 +274,16 @@ QScrollBar::handle:vertical:hover {
             <property name="text">
              <string>Gestão de R. H.</string>
             </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/Gestao de RH.png</normaloff>:/img/Gestao de RH.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
            </widget>
           </item>
           <item row="2" column="2">
@@ -233,6 +293,16 @@ QScrollBar::handle:vertical:hover {
             </property>
             <property name="text">
              <string>Configurações</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/Configuracoes.png</normaloff>:/img/Configuracoes.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -244,6 +314,16 @@ QScrollBar::handle:vertical:hover {
             <property name="text">
              <string>Logout</string>
             </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/Logout.png</normaloff>:/img/Logout.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
            </widget>
           </item>
           <item row="0" column="1">
@@ -253,6 +333,16 @@ QScrollBar::handle:vertical:hover {
             </property>
             <property name="text">
              <string>Restaurante</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/restaurante.png</normaloff>:/img/restaurante.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -264,6 +354,16 @@ QScrollBar::handle:vertical:hover {
             <property name="text">
              <string>Relatório</string>
             </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/relatorio.png</normaloff>:/img/relatorio.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
            </widget>
           </item>
           <item row="0" column="3">
@@ -273,6 +373,16 @@ QScrollBar::handle:vertical:hover {
             </property>
             <property name="text">
              <string>Itens/Estoque</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../img/img.qrc">
+              <normaloff>:/img/Itens.png</normaloff>:/img/Itens.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -664,6 +774,11 @@ QScrollBar::handle:vertical:hover {
                    <layout class="QHBoxLayout" name="horizontalLayout_4">
                     <item alignment="Qt::AlignmentFlag::AlignRight">
                      <widget class="QLabel" name="label_5">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+	background-color: transparent;
+}</string>
+                      </property>
                       <property name="text">
                        <string>Total:</string>
                       </property>
