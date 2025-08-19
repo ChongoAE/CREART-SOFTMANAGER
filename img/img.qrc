@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="img">
+    <file>perfil.png</file>
     <file>Arquivos.png</file>
     <file>Configuracoes.png</file>
     <file>Despesas.png</file>
