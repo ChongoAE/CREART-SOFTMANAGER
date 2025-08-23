@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="img">
+    <file>BackUp.png</file>
+    <file>Historico.png</file>
+    <file>Logout.png</file>
     <file>perfil.png</file>
     <file>Arquivos.png</file>
     <file>Configuracoes.png</file>

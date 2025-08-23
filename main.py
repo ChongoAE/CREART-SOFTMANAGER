@@ -19,9 +19,9 @@ class Janela_Principal(QMainWindow):
         self.ui.pagamentos.clicked.connect(lambda: self.ui.stackedWidget_2.setCurrentIndex(5))
         self.ui.notas.clicked.connect(lambda: self.ui.stackedWidget_2.setCurrentIndex(6))
 
-        self.ui.marketing.setDisabled(True)
-        self.ui.delivery.setDisabled(True)
-        self.ui.Documentos.setDisabled(True)
+        self.ui.Restaurante.setHidden(True)
+        self.ui.Hotelaria.setHidden(True)
+        self.ui.Restaurante_3.setHidden(True)
 
 
         

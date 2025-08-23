@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'untitledZJNWWG.ui'
+## Form generated from reading UI file 'mainAppaiQcTq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.9.1
 ##
@@ -16,17 +16,17 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
-    QHeaderView, QLabel, QLayout, QLineEdit,
-    QMainWindow, QPushButton, QSizePolicy, QSpacerItem,
-    QSplitter, QStackedWidget, QTableWidget, QTableWidgetItem,
-    QToolButton, QVBoxLayout, QWidget)
-import img_rc
+    QHeaderView, QLabel, QLineEdit, QMainWindow,
+    QPushButton, QSizePolicy, QSpacerItem, QSplitter,
+    QStackedWidget, QTableWidget, QTableWidgetItem, QToolButton,
+    QVBoxLayout, QWidget)
+import img.img_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1804, 845)
+        MainWindow.resize(2072, 815)
         MainWindow.setStyleSheet(u"\n"
 "/* ====== Fundo geral ====== */\n"
 "QWidget {\n"
@@ -118,30 +118,11 @@ class Ui_MainWindow(object):
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.page = QWidget()
         self.page.setObjectName(u"page")
-        self.verticalLayout_11 = QVBoxLayout(self.page)
-        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
-        self.frame_4 = QFrame(self.page)
-        self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setMinimumSize(QSize(0, 50))
-        self.frame_4.setMaximumSize(QSize(16777215, 100))
-        self.frame_4.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_4.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_7 = QHBoxLayout(self.frame_4)
-        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.horizontalLayout_5 = QHBoxLayout()
-        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.horizontalLayout_5.setSizeConstraint(QLayout.SizeConstraint.SetMaximumSize)
-        self.label_4 = QLabel(self.frame_4)
-        self.label_4.setObjectName(u"label_4")
-        self.label_4.setMaximumSize(QSize(70, 70))
-        self.label_4.setPixmap(QPixmap(u":/img/Logo.png"))
-        self.label_4.setScaledContents(True)
-
-        self.horizontalLayout_5.addWidget(self.label_4)
-
-        self.verticalLayout = QVBoxLayout()
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.label = QLabel(self.frame_4)
+        self.verticalLayout_10 = QVBoxLayout(self.page)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.label = QLabel(self.page)
         self.label.setObjectName(u"label")
         self.label.setEnabled(True)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
@@ -149,27 +130,57 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
         self.label.setSizePolicy(sizePolicy)
-        self.label.setMaximumSize(QSize(16777215, 25))
+        self.label.setMaximumSize(QSize(16777215, 40))
         font = QFont()
         font.setFamilies([u"Segoe UI"])
         font.setPointSize(20)
         font.setBold(True)
         self.label.setFont(font)
-        self.label.setStyleSheet(u"QLabel {\n"
-"background-color:transparent; \n"
-"padding-left: 10px\n"
-"}")
         self.label.setFrameShape(QFrame.Shape.NoFrame)
         self.label.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
 
-        self.verticalLayout.addWidget(self.label)
+        self.horizontalLayout_6.addWidget(self.label)
 
-        self.label_7 = QLabel(self.frame_4)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setMaximumSize(QSize(100000, 35))
-        self.label_7.setStyleSheet(u"QLabel {\n"
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_6.addItem(self.horizontalSpacer)
+
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.label_8 = QLabel(self.page)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setMaximumSize(QSize(40, 40))
+        self.label_8.setStyleSheet(u"background-color:transparent;")
+        self.label_8.setPixmap(QPixmap(u":/img/perfil.png"))
+        self.label_8.setScaledContents(True)
+
+        self.horizontalLayout_5.addWidget(self.label_8)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setSpacing(0)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.label_4 = QLabel(self.page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setMaximumSize(QSize(16777215, 30))
+        self.label_4.setStyleSheet(u"/* ====== Labels ====== */\n"
+"QLabel {\n"
+"    font-size: 12pt;\n"
+"    font-weight: bold;\n"
+"    color: #FFFFFF;\n"
 "background-color:transparent;\n"
-"padding-left:10px\n"
+"}")
+
+        self.verticalLayout.addWidget(self.label_4)
+
+        self.label_7 = QLabel(self.page)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setMaximumSize(QSize(16777215, 20))
+        self.label_7.setStyleSheet(u"/* ====== Labels ====== */\n"
+"QLabel {\n"
+"    font-size: 10pt;\n"
+"    font-weight: bold;\n"
+"    color: #FFFFFF;\n"
+"background-color:transparent;\n"
 "}")
 
         self.verticalLayout.addWidget(self.label_7)
@@ -178,225 +189,161 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addLayout(self.verticalLayout)
 
 
-        self.horizontalLayout_7.addLayout(self.horizontalLayout_5)
-
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.horizontalLayout_7.addItem(self.horizontalSpacer)
-
-        self.horizontalLayout_6 = QHBoxLayout()
-        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.label_8 = QLabel(self.frame_4)
-        self.label_8.setObjectName(u"label_8")
-        self.label_8.setMaximumSize(QSize(70, 70))
-        self.label_8.setPixmap(QPixmap(u":/img/perfil.png"))
-        self.label_8.setScaledContents(True)
-
-        self.horizontalLayout_6.addWidget(self.label_8)
-
-        self.verticalLayout_10 = QVBoxLayout()
-        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
-        self.label_9 = QLabel(self.frame_4)
-        self.label_9.setObjectName(u"label_9")
-        self.label_9.setEnabled(True)
-        sizePolicy.setHeightForWidth(self.label_9.sizePolicy().hasHeightForWidth())
-        self.label_9.setSizePolicy(sizePolicy)
-        self.label_9.setMaximumSize(QSize(16777215, 25))
-        font1 = QFont()
-        font1.setFamilies([u"Segoe UI"])
-        font1.setPointSize(10)
-        font1.setBold(True)
-        self.label_9.setFont(font1)
-        self.label_9.setStyleSheet(u"QLabel {\n"
-"background-color:transparent; \n"
-"padding-left: 10px;\n"
-"font-size: 10pt;\n"
-"}\n"
-"")
-        self.label_9.setFrameShape(QFrame.Shape.NoFrame)
-        self.label_9.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
-
-        self.verticalLayout_10.addWidget(self.label_9)
-
-        self.label_10 = QLabel(self.frame_4)
-        self.label_10.setObjectName(u"label_10")
-        self.label_10.setMaximumSize(QSize(100000, 35))
-        self.label_10.setStyleSheet(u"QLabel {\n"
-"background-color:transparent; \n"
-"padding-left: 10px;\n"
-"font-size: 10pt;\n"
-"}\n"
-"")
-
-        self.verticalLayout_10.addWidget(self.label_10)
-
-        self.label_11 = QLabel(self.frame_4)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setStyleSheet(u"QLabel {\n"
-"background-color:transparent; \n"
-"padding-left: 10px;\n"
-"font-size: 10pt;\n"
-"}\n"
-"")
-
-        self.verticalLayout_10.addWidget(self.label_11)
+        self.horizontalLayout_6.addLayout(self.horizontalLayout_5)
 
 
-        self.horizontalLayout_6.addLayout(self.verticalLayout_10)
-
-
-        self.horizontalLayout_7.addLayout(self.horizontalLayout_6)
-
-
-        self.verticalLayout_11.addWidget(self.frame_4)
+        self.verticalLayout_10.addLayout(self.horizontalLayout_6)
 
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
-        self.Portagem = QPushButton(self.page)
-        self.Portagem.setObjectName(u"Portagem")
-        icon = QIcon()
-        icon.addFile(u"../img/Portagem.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Portagem.setIcon(icon)
-        self.Portagem.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.Portagem, 0, 3, 1, 1)
-
-        self.Hotelaria = QPushButton(self.page)
-        self.Hotelaria.setObjectName(u"Hotelaria")
-        icon1 = QIcon()
-        icon1.addFile(u"../img/Hotelaria.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Hotelaria.setIcon(icon1)
-        self.Hotelaria.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.Hotelaria, 0, 2, 1, 1)
-
+        self.gridLayout.setHorizontalSpacing(50)
+        self.gridLayout.setVerticalSpacing(70)
         self.GestaodeRH = QPushButton(self.page)
         self.GestaodeRH.setObjectName(u"GestaodeRH")
-        icon2 = QIcon()
-        icon2.addFile(u"../img/Gestao de RH.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.GestaodeRH.setIcon(icon2)
+        icon = QIcon()
+        icon.addFile(u":/img/Gestao de RH.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.GestaodeRH.setIcon(icon)
         self.GestaodeRH.setIconSize(QSize(100, 100))
 
         self.gridLayout.addWidget(self.GestaodeRH, 0, 6, 1, 1)
 
-        self.Itens = QPushButton(self.page)
-        self.Itens.setObjectName(u"Itens")
-        icon3 = QIcon()
-        icon3.addFile(u"../img/Itens.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Itens.setIcon(icon3)
-        self.Itens.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.Itens, 0, 4, 1, 1)
-
-        self.Relatorio = QPushButton(self.page)
-        self.Relatorio.setObjectName(u"Relatorio")
-        icon4 = QIcon()
-        icon4.addFile(u"../img/relatorio.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Relatorio.setIcon(icon4)
-        self.Relatorio.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.Relatorio, 1, 4, 1, 1)
-
-        self.historico = QPushButton(self.page)
-        self.historico.setObjectName(u"historico")
-        icon5 = QIcon()
-        icon5.addFile(u"../img/Historico.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.historico.setIcon(icon5)
-        self.historico.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.historico, 2, 4, 1, 1)
-
-        self.BackUp = QPushButton(self.page)
-        self.BackUp.setObjectName(u"BackUp")
-        icon6 = QIcon()
-        icon6.addFile(u"../img/BackUp.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.BackUp.setIcon(icon6)
-        self.BackUp.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.BackUp, 2, 5, 1, 1)
-
         self.vendas = QPushButton(self.page)
         self.vendas.setObjectName(u"vendas")
-        icon7 = QIcon()
-        icon7.addFile(u":/img/vendas.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.vendas.setIcon(icon7)
+        icon1 = QIcon()
+        icon1.addFile(u":/img/vendas.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.vendas.setIcon(icon1)
         self.vendas.setIconSize(QSize(100, 100))
 
         self.gridLayout.addWidget(self.vendas, 0, 0, 1, 1)
 
-        self.PainelEstrategico = QPushButton(self.page)
-        self.PainelEstrategico.setObjectName(u"PainelEstrategico")
-        icon8 = QIcon()
-        icon8.addFile(u"../img/painel estrategico.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.PainelEstrategico.setIcon(icon8)
-        self.PainelEstrategico.setIconSize(QSize(100, 100))
+        self.Itens = QPushButton(self.page)
+        self.Itens.setObjectName(u"Itens")
+        icon2 = QIcon()
+        icon2.addFile(u":/img/Itens.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Itens.setIcon(icon2)
+        self.Itens.setIconSize(QSize(100, 100))
 
-        self.gridLayout.addWidget(self.PainelEstrategico, 1, 5, 1, 1)
-
-        self.Configuracoes = QPushButton(self.page)
-        self.Configuracoes.setObjectName(u"Configuracoes")
-        icon9 = QIcon()
-        icon9.addFile(u"../img/Configuracoes.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Configuracoes.setIcon(icon9)
-        self.Configuracoes.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.Configuracoes, 2, 0, 1, 1)
-
-        self.marketing = QPushButton(self.page)
-        self.marketing.setObjectName(u"marketing")
-        icon10 = QIcon()
-        icon10.addFile(u"../img/marketing.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.marketing.setIcon(icon10)
-        self.marketing.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.marketing, 1, 0, 1, 1)
-
-        self.Logout = QPushButton(self.page)
-        self.Logout.setObjectName(u"Logout")
-        icon11 = QIcon()
-        icon11.addFile(u"../img/Logout.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Logout.setIcon(icon11)
-        self.Logout.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.Logout, 2, 6, 1, 1)
-
-        self.Arquivos = QPushButton(self.page)
-        self.Arquivos.setObjectName(u"Arquivos")
-        icon12 = QIcon()
-        icon12.addFile(u"../img/Arquivos.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Arquivos.setIcon(icon12)
-        self.Arquivos.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.Arquivos, 1, 6, 1, 1)
-
-        self.Despesas = QPushButton(self.page)
-        self.Despesas.setObjectName(u"Despesas")
-        icon13 = QIcon()
-        icon13.addFile(u":/img/Despesas.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Despesas.setIcon(icon13)
-        self.Despesas.setIconSize(QSize(100, 100))
-
-        self.gridLayout.addWidget(self.Despesas, 0, 5, 1, 1)
+        self.gridLayout.addWidget(self.Itens, 0, 4, 1, 1)
 
         self.Restaurante = QPushButton(self.page)
         self.Restaurante.setObjectName(u"Restaurante")
-        icon14 = QIcon()
-        icon14.addFile(u"../img/restaurante.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.Restaurante.setIcon(icon14)
+        icon3 = QIcon()
+        icon3.addFile(u":/img/restaurante.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Restaurante.setIcon(icon3)
         self.Restaurante.setIconSize(QSize(100, 100))
 
         self.gridLayout.addWidget(self.Restaurante, 0, 1, 1, 1)
 
+        self.Logout = QPushButton(self.page)
+        self.Logout.setObjectName(u"Logout")
+        icon4 = QIcon()
+        icon4.addFile(u":/img/Logout.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Logout.setIcon(icon4)
+        self.Logout.setIconSize(QSize(100, 100))
 
-        self.verticalLayout_11.addLayout(self.gridLayout)
+        self.gridLayout.addWidget(self.Logout, 2, 6, 1, 1)
+
+        self.Despesas = QPushButton(self.page)
+        self.Despesas.setObjectName(u"Despesas")
+        self.Despesas.setMinimumSize(QSize(269, 0))
+        icon5 = QIcon()
+        icon5.addFile(u":/img/Despesas.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Despesas.setIcon(icon5)
+        self.Despesas.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.Despesas, 0, 5, 1, 1)
+
+        self.Hotelaria = QPushButton(self.page)
+        self.Hotelaria.setObjectName(u"Hotelaria")
+        icon6 = QIcon()
+        icon6.addFile(u":/img/Hotelaria.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Hotelaria.setIcon(icon6)
+        self.Hotelaria.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.Hotelaria, 0, 2, 1, 1)
+
+        self.historico = QPushButton(self.page)
+        self.historico.setObjectName(u"historico")
+        icon7 = QIcon()
+        icon7.addFile(u":/img/Historico.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.historico.setIcon(icon7)
+        self.historico.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.historico, 2, 4, 1, 1)
+
+        self.Arquivos = QPushButton(self.page)
+        self.Arquivos.setObjectName(u"Arquivos")
+        icon8 = QIcon()
+        icon8.addFile(u":/img/Arquivos.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Arquivos.setIcon(icon8)
+        self.Arquivos.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.Arquivos, 1, 6, 1, 1)
+
+        self.marketing = QPushButton(self.page)
+        self.marketing.setObjectName(u"marketing")
+        icon9 = QIcon()
+        icon9.addFile(u":/img/marketing.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.marketing.setIcon(icon9)
+        self.marketing.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.marketing, 1, 0, 1, 1)
+
+        self.BackUp = QPushButton(self.page)
+        self.BackUp.setObjectName(u"BackUp")
+        icon10 = QIcon()
+        icon10.addFile(u":/img/BackUp.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.BackUp.setIcon(icon10)
+        self.BackUp.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.BackUp, 2, 5, 1, 1)
+
+        self.Configuracoes = QPushButton(self.page)
+        self.Configuracoes.setObjectName(u"Configuracoes")
+        icon11 = QIcon()
+        icon11.addFile(u":/img/Configuracoes.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Configuracoes.setIcon(icon11)
+        self.Configuracoes.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.Configuracoes, 2, 0, 1, 1)
+
+        self.Relatorio = QPushButton(self.page)
+        self.Relatorio.setObjectName(u"Relatorio")
+        icon12 = QIcon()
+        icon12.addFile(u":/img/relatorio.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Relatorio.setIcon(icon12)
+        self.Relatorio.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.Relatorio, 1, 4, 1, 1)
+
+        self.PainelEstrategico = QPushButton(self.page)
+        self.PainelEstrategico.setObjectName(u"PainelEstrategico")
+        icon13 = QIcon()
+        icon13.addFile(u":/img/painel estrategico.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.PainelEstrategico.setIcon(icon13)
+        self.PainelEstrategico.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.PainelEstrategico, 1, 5, 1, 1)
+
+        self.Restaurante_3 = QPushButton(self.page)
+        self.Restaurante_3.setObjectName(u"Restaurante_3")
+        icon14 = QIcon()
+        icon14.addFile(u"../img/Portagem.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.Restaurante_3.setIcon(icon14)
+        self.Restaurante_3.setIconSize(QSize(100, 100))
+
+        self.gridLayout.addWidget(self.Restaurante_3, 0, 3, 1, 1)
+
+
+        self.verticalLayout_10.addLayout(self.gridLayout)
 
         self.stackedWidget.addWidget(self.page)
-        self.page_2 = QWidget()
-        self.page_2.setObjectName(u"page_2")
-        self.verticalLayout_6 = QVBoxLayout(self.page_2)
+        self.Vendas = QWidget()
+        self.Vendas.setObjectName(u"Vendas")
+        self.verticalLayout_6 = QVBoxLayout(self.Vendas)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
-        self.splitter = QSplitter(self.page_2)
+        self.splitter = QSplitter(self.Vendas)
         self.splitter.setObjectName(u"splitter")
         self.splitter.setOrientation(Qt.Orientation.Horizontal)
         self.layoutWidget = QWidget(self.splitter)
@@ -646,7 +593,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addWidget(self.splitter)
 
-        self.stackedWidget.addWidget(self.page_2)
+        self.stackedWidget.addWidget(self.Vendas)
 
         self.verticalLayout_2.addWidget(self.stackedWidget)
 
@@ -663,73 +610,70 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.label_4.setText("")
-        self.label.setText(QCoreApplication.translate("MainWindow", u"CREART", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"SOFTMANAGEMENT", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"CREART SOFTMANAGEMENT", None))
         self.label_8.setText("")
-        self.label_9.setText(QCoreApplication.translate("MainWindow", u"CREART", None))
-        self.label_10.setText(QCoreApplication.translate("MainWindow", u"SO", None))
-        self.label_11.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-#if QT_CONFIG(tooltip)
-        self.Portagem.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de vendas", None))
-#endif // QT_CONFIG(tooltip)
-        self.Portagem.setText(QCoreApplication.translate("MainWindow", u"Portagem", None))
-#if QT_CONFIG(tooltip)
-        self.Hotelaria.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de vendas", None))
-#endif // QT_CONFIG(tooltip)
-        self.Hotelaria.setText(QCoreApplication.translate("MainWindow", u"Hotelaria", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"12:00", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u" 01/01/2025", None))
 #if QT_CONFIG(tooltip)
         self.GestaodeRH.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de compras", None))
 #endif // QT_CONFIG(tooltip)
         self.GestaodeRH.setText(QCoreApplication.translate("MainWindow", u"Gest\u00e3o de R. H.", None))
 #if QT_CONFIG(tooltip)
-        self.Itens.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de itens", None))
-#endif // QT_CONFIG(tooltip)
-        self.Itens.setText(QCoreApplication.translate("MainWindow", u"Itens/Estoque", None))
-#if QT_CONFIG(tooltip)
-        self.Relatorio.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de Relatorios", None))
-#endif // QT_CONFIG(tooltip)
-        self.Relatorio.setText(QCoreApplication.translate("MainWindow", u"Relat\u00f3rio", None))
-#if QT_CONFIG(tooltip)
-        self.historico.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de Relatorios", None))
-#endif // QT_CONFIG(tooltip)
-        self.historico.setText(QCoreApplication.translate("MainWindow", u"Hist\u00f3rico", None))
-#if QT_CONFIG(tooltip)
-        self.BackUp.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de Relatorios", None))
-#endif // QT_CONFIG(tooltip)
-        self.BackUp.setText(QCoreApplication.translate("MainWindow", u"BackUp", None))
-#if QT_CONFIG(tooltip)
         self.vendas.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de vendas", None))
 #endif // QT_CONFIG(tooltip)
         self.vendas.setText(QCoreApplication.translate("MainWindow", u" Vendas/Loja", None))
 #if QT_CONFIG(tooltip)
-        self.PainelEstrategico.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de delivery", None))
+        self.Itens.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de itens", None))
 #endif // QT_CONFIG(tooltip)
-        self.PainelEstrategico.setText(QCoreApplication.translate("MainWindow", u"Painel Estrat\u00e9gico", None))
+        self.Itens.setText(QCoreApplication.translate("MainWindow", u"Itens/Estoque", None))
 #if QT_CONFIG(tooltip)
-        self.Configuracoes.setToolTip(QCoreApplication.translate("MainWindow", u"Acesse Configuracoes", None))
+        self.Restaurante.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de vendas", None))
 #endif // QT_CONFIG(tooltip)
-        self.Configuracoes.setText(QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00f5es", None))
-#if QT_CONFIG(tooltip)
-        self.marketing.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de Marketing", None))
-#endif // QT_CONFIG(tooltip)
-        self.marketing.setText(QCoreApplication.translate("MainWindow", u"Marketing", None))
+        self.Restaurante.setText(QCoreApplication.translate("MainWindow", u"Restaurante", None))
 #if QT_CONFIG(tooltip)
         self.Logout.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para fazer logout", None))
 #endif // QT_CONFIG(tooltip)
         self.Logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
 #if QT_CONFIG(tooltip)
+        self.Despesas.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de compras", None))
+#endif // QT_CONFIG(tooltip)
+        self.Despesas.setText(QCoreApplication.translate("MainWindow", u"Despesas", None))
+#if QT_CONFIG(tooltip)
+        self.Hotelaria.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de vendas", None))
+#endif // QT_CONFIG(tooltip)
+        self.Hotelaria.setText(QCoreApplication.translate("MainWindow", u"Hotelaria", None))
+#if QT_CONFIG(tooltip)
+        self.historico.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de Relatorios", None))
+#endif // QT_CONFIG(tooltip)
+        self.historico.setText(QCoreApplication.translate("MainWindow", u"Hist\u00f3rico", None))
+#if QT_CONFIG(tooltip)
         self.Arquivos.setToolTip(QCoreApplication.translate("MainWindow", u"Acesse Documentos", None))
 #endif // QT_CONFIG(tooltip)
         self.Arquivos.setText(QCoreApplication.translate("MainWindow", u"Arquivos", None))
 #if QT_CONFIG(tooltip)
-        self.Despesas.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de itens", None))
+        self.marketing.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de Marketing", None))
 #endif // QT_CONFIG(tooltip)
-        self.Despesas.setText(QCoreApplication.translate("MainWindow", u"Despesas", None))
+        self.marketing.setText(QCoreApplication.translate("MainWindow", u"Marketing", None))
 #if QT_CONFIG(tooltip)
-        self.Restaurante.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de vendas", None))
+        self.BackUp.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de Relatorios", None))
 #endif // QT_CONFIG(tooltip)
-        self.Restaurante.setText(QCoreApplication.translate("MainWindow", u"Restaurante", None))
+        self.BackUp.setText(QCoreApplication.translate("MainWindow", u"BackUp", None))
+#if QT_CONFIG(tooltip)
+        self.Configuracoes.setToolTip(QCoreApplication.translate("MainWindow", u"Acesse Configuracoes", None))
+#endif // QT_CONFIG(tooltip)
+        self.Configuracoes.setText(QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00f5es", None))
+#if QT_CONFIG(tooltip)
+        self.Relatorio.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de Relatorios", None))
+#endif // QT_CONFIG(tooltip)
+        self.Relatorio.setText(QCoreApplication.translate("MainWindow", u"Relat\u00f3rio", None))
+#if QT_CONFIG(tooltip)
+        self.PainelEstrategico.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de delivery", None))
+#endif // QT_CONFIG(tooltip)
+        self.PainelEstrategico.setText(QCoreApplication.translate("MainWindow", u"Painel Estrat\u00e9gico", None))
+#if QT_CONFIG(tooltip)
+        self.Restaurante_3.setToolTip(QCoreApplication.translate("MainWindow", u"Clique para entrar no painel de vendas", None))
+#endif // QT_CONFIG(tooltip)
+        self.Restaurante_3.setText(QCoreApplication.translate("MainWindow", u"Portagem", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Vendas", None))
         self.pdv.setText(QCoreApplication.translate("MainWindow", u"PDV", None))
         self.clientes.setText(QCoreApplication.translate("MainWindow", u"Clientes", None))
